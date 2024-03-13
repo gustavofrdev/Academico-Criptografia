@@ -45,7 +45,7 @@ if usage.isnumeric() and int(usage) == 1:
             newKey = str(input("Digite a chave de encriptação personalizada: "))
             if checkDoubleLetters(newKey):
                 print("[NUKKLE]\n Há letras repetidas no seu alfabeto personalizado.\n")
-            if len(newKey) < len(alphabet):
+            elif len(newKey) < len(alphabet):
                 print("[NUKKLE]\n Sua chave de encriptação personalizada deverá conter a mesma quantidade de caractéres do alfabeto comum. \n Seu Alfabeto: ",len(newKey), "alfabeto comum: ", len(alphabet))
             else:
                 break
